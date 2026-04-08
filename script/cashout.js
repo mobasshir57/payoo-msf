@@ -22,6 +22,17 @@ if( cashoutPin ==='1234'){
     // 5.1- true:: show an alert and set balance
     alert('Cashout Successfull');
     setBalance(newBalance);
+    // transaction card add
+        const transaction = document.getElementById('transaction-container');
+        const newTransaction = document.createElement("div");
+        newTransaction.innerHTML = `
+         <div class="transaction-card p-6 bg-base-100 mb-5">
+        Cashout ${cashoutAmmount} BDT successfull to ${cashoutNumber} at ${new Date}
+        </div>
+        `
+        transaction.append(newTransaction);
+
+
 }else{
     // 5.2- False:: show an error alart and return
     alert('Invalive Pin')

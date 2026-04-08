@@ -20,8 +20,19 @@ document.getElementById('add-money-btn').addEventListener("click", function(){
     // 4- get pin and validate
     const addMoneyPin = getValueFromInput('add-money-pin');
     if(addMoneyPin === '1234'){
-        alert(`Add money successfull from ${bankName} at ${new Date}`)
+        alert(`Add money successfull from ${bankName}`)
         setBalance(newBalance);
+
+        // transaction card add
+        const transaction = document.getElementById('transaction-container');
+        const newTransaction = document.createElement("div");
+        newTransaction.innerHTML = `
+         <div class="transaction-card p-6 bg-base-100 mb-5">
+        Add money successfull from ${bankName} Account no: ${bankAccNumber} - at ${new Date}
+        </div>
+        `
+        transaction.append(newTransaction);
+
     }else{
         alert('Please Enter a Valide Pin Number')
         return;

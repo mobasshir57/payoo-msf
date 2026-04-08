@@ -52,7 +52,7 @@
         <!-- welcome  -->
         <div class="py-10 space-y-4">
             <h1 class="text-3xl font-bold">Welcome to Pay<span class="text-[#7460FF]">oo</span></h1>
-            <p class="text-neutral/50 ">Enjoy easy and convenient financial services with us. Cashout charge is low and
+            <p class="text-neutral/50 ">Enjoy easy and convenient financial services with us. Cashout charge is low!
             </p>
         </div>
         <!-- Cards Section -->
@@ -71,15 +71,15 @@
                     <img src="./assets/opt-3.png" alt="">
                     <p>Transfer Money</p>
                 </button>
-                <button class="btn flex-col h-full py-4 btn-primary btn-soft  border-2 border-gray-200 ">
-                    <img src="./assets/opt-4.png" alt="">
-                    <p>Get Bonus</p>
-                </button>
-                <button class="btn flex-col h-full py-4 btn-primary btn-soft  border-2 border-gray-200 ">
+                 <button class="btn flex-col h-full py-4 btn-primary btn-soft  border-2 border-gray-200 ">
                     <img src="./assets/opt-5.png" alt="">
                     <p>Pay Bill</p>
                 </button>
                 <button class="btn flex-col h-full py-4 btn-primary btn-soft  border-2 border-gray-200 ">
+                    <img src="./assets/opt-4.png" alt="">
+                    <p>Get Bonus</p>
+                </button>
+                <button onclick="showOnly('transaction')" class="btn flex-col h-full py-4 btn-primary btn-soft  border-2 border-gray-200 ">
                     <img src="./assets/opt-6.png" alt="">
                     <p>Transactions</p>
                 </button>
@@ -88,7 +88,7 @@
         </section>
 
         <!-- Add Money -->
-        <section id="add-money" class="py-8 hidden">
+        <section id="add-money" class="py-5 hidden">
             <h2 class="text-xl font-bold mb-5">Add Money</h2>
             <div class="card bg-base-100 w-full mt-10 rounded-2xl">
                 <div class="card-body">
@@ -141,6 +141,14 @@
             </div>
 
         </section>
+
+        <!-- Transactions -->
+         <section id="transaction" class="py-5 hidden">
+            <h2 class="text-xl font-bold mb-5">Transactions</h2>
+            <div id="transaction-container">
+               
+            </div>
+         </section>
 
     </main>
 
