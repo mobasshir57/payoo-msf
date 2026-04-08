@@ -15,7 +15,7 @@ document.getElementById('login-btn').addEventListener('click', function() {
     if(number =='01234567890' && pin == '1234'){
         //4- i- if valid, show success message and redirect to home  page,
         alert('Login Successfull');
-        window.location.assign ('../home.html');
+        window.location.href = "./home.html";
     }
     else{
         // 4- ii- else show error message
