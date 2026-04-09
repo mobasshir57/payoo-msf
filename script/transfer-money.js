@@ -13,7 +13,10 @@ document.getElementById('transfer-money-btn')
 
     const currentBalance = getBalance()
     const newBalance = currentBalance - Number(transferAmmount);
-    console.log(newBalance);
+    if(newBalance < 0){
+    alert("Invalid Ammount")
+    return;
+}
 
     const transferPin = getValueFromInput('transfer-money-pin');
     if(transferPin === '1234'){
