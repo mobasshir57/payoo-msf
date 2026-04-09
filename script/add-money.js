@@ -1,19 +1,19 @@
 document.getElementById('add-money-btn').addEventListener("click", function(){
     // 1- get bank name
-    const bankName = getValueFromInput('add-money-bank')
+    const bankName = getValueFromInput('add-money-bank');
     if(bankName == 'Select a bank'){
         alert('Please select a Bank Name');
         return;
     }
     
     // 2- get bank Acc Number
-    const bankAccNumber = getValueFromInput('bank-account-number')
+    const bankAccNumber = getValueFromInput('bank-account-number');
     if(bankAccNumber.length != 11){
         alert('Invalid Bank Account Number')
         return;
     }
     // 3- get Ammount and add to account
-    const addAmmount = getValueFromInput('add-money-ammount')
+    const addAmmount = getValueFromInput('add-money-ammount');
     const currentBalance = getBalance();
     const newBalance = currentBalance + Number(addAmmount);
 
